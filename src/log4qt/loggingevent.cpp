@@ -167,7 +167,7 @@ namespace Log4Qt
 	void LoggingEvent::setThreadNameToCurrent()
 	{
 		if (QThread::currentThread())
-            mThreadName = QString("%1 - %2").arg( QThread::currentThread()->objectName()).arg((int) QThread::currentThreadId());
+            mThreadName = QString("%1 - %2").arg( QThread::currentThread()->objectName()).arg((long) QThread::currentThreadId());
 //			mThreadName = QThread::currentThread()->objectName();
 	}
 	
